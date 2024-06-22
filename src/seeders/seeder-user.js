@@ -12,10 +12,22 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
+    // email: DataTypes.STRING,
+    // password: DataTypes.STRING,
+    // firstName: DataTypes.STRING,
+    // lastName: DataTypes.STRING,
+    // address: DataTypes.STRING,
+    // gender: DataTypes.BOOLEAN,
+    // roleid: DataTypes.STRING
     return queryInterface.bulkInsert('users', [{
-      firstname: 'John Doe',
-      lastname: 'John Doe',
-      email: 'JohnDoe@gmail.com',
+      email: 'admin@gmail.com',
+      password: '123456',
+      firstname: 'Vo',
+      lastname: 'Tu',
+      address: 'vietnamese',
+      gender: 1,
+      typeRole: 'ROLE',
+      keyRole: 'R1',
       createdAt: new Date(),
       updatedAt: new Date()
     }], {});
