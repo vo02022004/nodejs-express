@@ -9,19 +9,9 @@
 
 <body>
     <h1>Welcome to the Home Page</h1>
-    <div id="userData">
-        <% if (Array.isArray(data) && data.length> 0) { %>
-            <ul>
-                <% data.forEach(function(user) { %>
-                    <li>
-                        <%= user.firstname %> <!-- Thay thế `user.username` bằng các thuộc tính cụ thể của User -->
-                    </li>
-                    <% }); %>
-            </ul>
-            <% } else { %>
-                <p>No data available</p>
-                <% } %>
-    </div>
+    <p>
+        <%=data %>
+    </p>
 </body>
 
 </html>

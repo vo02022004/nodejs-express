@@ -12,22 +12,27 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    // email: DataTypes.STRING,
+    //     email: DataTypes.STRING,
     // password: DataTypes.STRING,
     // firstName: DataTypes.STRING,
     // lastName: DataTypes.STRING,
     // address: DataTypes.STRING,
+    // phoneNumber: DataTypes.INTEGER,
     // gender: DataTypes.BOOLEAN,
-    // roleid: DataTypes.STRING
+    // image: DataTypes.STRING,
+    // roleId: DataTypes.STRING,
+    // positionId: DataTypes.STRING,
     return queryInterface.bulkInsert('users', [{
       email: 'admin@gmail.com',
       password: '123456',
       firstname: 'Vo',
       lastname: 'Tu',
       address: 'vietnamese',
+      phoneNumber: '0388379224',
       gender: 1,
-      typeRole: 'ROLE',
-      keyRole: 'R1',
+      image: '',
+      roleId: 'R1',
+      positionId: 'doctor',
       createdAt: new Date(),
       updatedAt: new Date()
     }], {});
